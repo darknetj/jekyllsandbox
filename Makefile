@@ -16,5 +16,6 @@ deploy: ## Push the commited changes on master to "production" git remote
 	git push production master
 
 clean:  ## Purge the generated website and asset cache
-	rm -rf source/.jekyll-assests-cache/
+	rm -rf source/.jekyll-assets-cache/
+	rm -rf source/.sass-cache/
 	rm -rf source/_site/

@@ -21,14 +21,14 @@ layout: compress
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7cRoboto:400,500,600,700" rel="stylesheet" type="text/css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
 
-    <script data-main="{{ 'all.js?7' | asset_path }}"
+    <script data-main="{{ 'all.js' | asset_path }}"
             src="{{ 'vendor/require.js' | asset_path }}" defer></script>
   </head>
   <body id="page-top" class='blog blog-layout' data-spy="scroll" data-target=".navbar-fixed-top">
     {% include layout/nav.html %}
     {{ content }}
     {% include layout/footer.html %}
-    <link href="{{ 'blog.css?2' | asset_path }}" rel="stylesheet">
+    {% stylesheet 'blog' %}
   </body>
 </html>
 

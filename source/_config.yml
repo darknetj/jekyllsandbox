@@ -22,10 +22,7 @@ gems:
 # Begin plugin-specific configuration
 
 assets:
-  sass_dir: _assets/stylesheets
   debug: false
-  cachebust: none
-  cache: true
   js_compressor: uglifier
   css_compressor: sass
   sources:

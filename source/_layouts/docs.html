@@ -12,16 +12,16 @@
     <!-- RSS -->
     <link href="https://copperhead.co/feed.xml" rel="alternate" type="application/rss+xml" title="Blog | Copperhead Security" />
 
-    <script src="/assets/android.js" defer></script>
-    <script data-main="/assets/all.js?7"
-            src="/assets/vendor/require.js" defer></script>
+    {% javascript 'android' defer %}
+    <script data-main="{{ 'all.js' | asset_path }}"
+            src="{{ 'vendor/require.js' | asset_path }}" defer></script>
   </head>
   <body id="page-top" class='android-layout' data-spy="scroll" data-target=".navbar-fixed-top">
 
     <nav class="black" role="navigation">
   <div class="nav-wrapper container">
     <a id="logo-container" href="/" class="brand-logo">
-      <img src="/assets/logo_circle_white.png" class='navbar-brand-icon' alt=''>
+      <img src="{{ 'logo_circle_white.png' | asset_path }}" class='navbar-brand-icon' alt=''>
       <span class='hide-on-small-only'>
         Copperhead
       </span>
@@ -273,7 +273,7 @@
 
 
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="/assets/android.css?2">
+    {% stylesheet 'android' %}
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,600,700" rel="stylesheet" type="text/css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
   </body>
