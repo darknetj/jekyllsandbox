@@ -1,6 +1,21 @@
-name: Your New Jekyll Site
-markdown: redcarpet
-pygments: true
+name: Copperhead Security
+title: Copperhead Security
+email: team@copperhead.co
+description: A security collective that builds software, helps organizations navigate information security and keep operations safe from threats.
+baseurl: ""
+url: "https://copperhead.co"
+
+markdown: kramdown
+highlighter: pygments
+timezone: America/New_York
+
+include:
+  - .htaccess
+
+gems:
+  - jekyll-timeago
+
+# Begin plugin-specific configuration
 
 jekyll_timeago:
   depth: 1 # Level of detail
