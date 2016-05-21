@@ -1,29 +1,44 @@
-## Jekyll on OpenShift
+Copperhead
+=================
 
-#### Running on OpenShift
+Our marketing website and blog.
 
-### Using the OpenShift Hub
-You can launch a Jekyll site on OpenShift using the [QuickStart on the OpenShift Hub](https://hub.openshift.com/quickstarts/41-jekyll)
+It's powered by Jekyll & SCSS to compile to static HTML, CSS, etc.
 
-### Using the command line
-    rhc app create <appname> php-5.4 --from-code=https://github.com/openshift-quickstart/jekyll-openshift.git
 
-#### Updating your site
-- Clone your OpenShift application to your local workstation
-- Make updates to your site
-- git commit your changes
-- git push
+Development Setup
+-------------------------------------------------------------
 
-That's it! Your static site files will be generated on your gear and placed in the correct directory.  
+1) Make sure you have Ruby, version 2.0 or above is probably fine. Your OS package manager should have it or download & install `rvm` (it's slightly annoying)
 
-This QuickStart supports both single gear and scaled deployments.  
+2) Make sure you have Bundler installed:
 
-The hot_deploy marker is set for this repository (.openshift/markers/hot_deploy) so your website will not go down while it's being updated.  The files will just be replaced while the server is running.
+    gem install bundler
 
-### Community
+3) Install the dependencies for static compilation:
 
-The official community support is available here: http://jekyllrb.com/help/
+    bundle install
 
-### Bug Reports
 
-Please report bugs or log feature requests using Github Issues, pull requests are welcome.
+Usage
+-------------------------------------------------------------
+
+Run Jekyll in the foreground and watch for new changes you make, automatically updating the compiled output:
+
+    make server
+
+PLEASE NOTE THAT URL-REWRITING DOESN'T EXIST ON LOCAL DEV SERVER:
+
+If you get a 404 page when clicking a link, try adding `.html` to the end.
+
+
+Notes
+-------------------------------------------------------------
+
+Learn Jekyll and how it saves you time making static webpages
+
+    https://jekyllrb.com/docs/home/
+
+Learn SCSS, a CSS extension to make it easier to read/write
+
+    http://sass-lang.com/
