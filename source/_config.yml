@@ -9,6 +9,9 @@ markdown: kramdown
 highlighter: pygments
 timezone: America/New_York
 
+# For blog post generation
+permalink: /blog/:year/:month/:day/:title
+
 include:
   - .htaccess
 
