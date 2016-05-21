@@ -1,0 +1,73 @@
+<!-- Services Section -->
+<section id="services" class="container content-section text-center">
+  <div class="row text-center services-section">
+    <div class="col-lg-10 col-lg-offset-1">
+      <div class="row">
+        <h2>Services</h2>
+      </div>
+      <div class="row">
+        {% for service in site.data.services %}
+          <div class="col-md-6 col-sm-6">
+            <div class="service-item">
+              <div class="service-item-content">
+                <span class="fa-stack fa-4x service-icon">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-{{ service.icon }} fa-stack-1x text-primary"></i>
+                </span>
+
+                <a href="#service-modal-{{ service.url }}" 
+                   class="service-name-link" 
+                   data-toggle="modal" 
+                   data-target="#service-modal-{{ service.url }}"
+                   role="button">
+                  <h4 class="service-name">
+                    <strong>{{ service.name }}</strong>
+                  </h4>
+                </a>
+                <p class='service-summary'>
+                  {{ service.summary }}
+                </p>
+                <a href="#service-modal-{{ service.url }}" 
+                   class="service-learn-more service-btn btn btn-default" 
+                   role="button" 
+                   data-target="#service-modal-{{ service.url }}"
+                   data-source="homepage-box"
+                   data-toggle="modal" >
+                  Learn More
+                </a>
+              </div>
+            </div>
+            <div class="modal fade service-modal" id="service-modal-{{ service.url }}" tabindex="-1" role="dialog" aria-labelledby="service-modal-{{ service.url }}">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 id="service-modal-{{ service.url }}-header" class="modal-title">
+                      <span class="fa-stack service-icon">
+                        <i class="fa fa-{{ service.icon }} fa-stack-1x text-primary"></i>
+                      </span>
+                      {{ service.name }}
+                    </h4>
+                  </div>
+                  <div class="modal-body text-left">
+                    <p>{{ service.summary }}</p>
+                    <ul>
+                      {% for item in service.content %}
+                        <li>{{ item }}</li>
+                      {% endfor %}
+                    </ul>
+                  </div>
+                  <div class="modal-footer">
+                    <a href='/contact' class="btn btn-default btn-contact-us" data-source="service-modal" data-dismiss="modal">Contact us</a>
+                    <button type="button" class="btn btn-primary close-modal" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+

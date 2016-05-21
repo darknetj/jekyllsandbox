@@ -1,0 +1,116 @@
+header.subpage {
+  height: 200px;
+  color: white;
+  line-height: 200px;
+  clear: both;
+  overflow: hidden;
+  h1 {
+    line-height: 134px;
+    font-size: 56px;
+  }
+}
+
+main.subpage {
+  margin-top: 64px;
+  min-height: 550px;
+  font-size: 15px;
+  h3 {
+    font-weight: 500;
+    font-size: 38px;
+  }
+}
+
+// .builds-table-mobile {
+//   tr td:last-child, tr th:last-child {
+//     display: none;
+//   }
+// }
+
+.device-filter{
+  .device-selected {
+    color: #333;
+    background: #fff9c4;
+  }
+}
+
+table.responsive-table {
+  td, th {
+    vertical-align: top;
+    text-align: left;
+  }
+}
+
+$table-border-color: #E2E2E2;
+.content-table {
+  border-right: 1px solid $table-border-color;
+  border-bottom: 1px solid $table-border-color;
+  td, th {
+    font-size: 15px;
+    border-top: 1px solid $table-border-color;
+    border-left: 1px solid $table-border-color;
+    vertical-align: top;
+    padding: 1em;
+  }
+}
+
+.docs-toc {
+    .collection-item {
+        color: #1565c0 !important;
+    }
+
+    li {
+        padding: 10px 0;
+        color: #7d7d7d;
+        font-size: 1.2em;
+    }
+    li a {
+        text-decoration: underline
+    }
+
+}
+
+.docs-sidebar {
+    margin-top: 60px;
+    a {
+        color: #333 !important;
+        font-weight: normal !important;
+    }
+    a.active {
+        background: #eee !important;
+    }
+}
+
+.docs-post {
+    h1, h2, h3, h4 {
+        font-family: 'franklin itc w01 medium','helvetica neue',helvetica,sans-serif;
+    }
+
+    h1 {
+        font-size: 3em;
+        font-weight: bold;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    h3 {
+        font-size: 1.6em !important;
+        font-weight: bold !important;
+    }
+
+    h4 {
+        font-size: 1.35em !important;
+        font-weight: bold !important;
+    }
+
+    p {
+        font-weight: normal;
+        font-size: 16px;
+    }
+
+    ul li {
+            margin-left: 3em;
+            list-style: disc;
+    }
+}

@@ -17,8 +17,25 @@ include:
 
 gems:
   - jekyll-timeago
+  - jekyll-assets
 
 # Begin plugin-specific configuration
+
+assets:
+  sass_dir: _assets/stylesheets
+  debug: false
+  cachebust: none
+  cache: true
+  js_compressor: uglifier
+  css_compressor: sass
+  sources:
+    - _assets/images
+    - _assets/javascripts
+    - _assets/stylesheets
+    - _assets/stylesheets/vendor/*
+    - _assets/stylesheets/blog/*
+    - _assets/stylesheets/application/*
+    - _assets/fonts
 
 jekyll_timeago:
   depth: 1 # Level of detail

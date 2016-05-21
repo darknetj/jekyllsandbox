@@ -1,0 +1,86 @@
+.header-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+video#cell-tower {
+  position: absolute; 
+  min-width: 100%; 
+  min-height: 850px;
+  z-index: 0;
+  background-position: bottom center;
+  background-size: cover;
+  opacity: 1;
+}
+
+.fader {
+  /* height: 75px; */
+  /* margin-top: -75px; */
+  /* width: 100%; */
+  /* background: linear-gradient(to top, #000 0%, transparent 100%); */
+  /* clear: both; */
+  /* z-index: 2; */
+}
+
+.navbar.top-nav-collapse {
+  background: #000;
+}
+
+header.intro {
+  background: none;
+  position: relative;
+  z-index: 1;
+}
+
+.homepage-content {
+  position: absolute;
+  z-index: 7;
+  top: 800px;
+  background: black;
+  width: 100%;
+}
+
+.modal-open .modal {
+  z-index: 8;
+  overflow: visible;
+}
+
+.navbar-collapse.navbar-right.navbar-main-collapse.collapse.in {
+  background: rgba(0,0,0,0.8);
+}
+
+$mobile-video-height: 564px;
+@media(max-width:567px) {
+  video#cell-tower {
+    opacity: 0.5;
+    min-height: $mobile-video-height;
+    height: $mobile-video-height;
+    display: none;
+  }
+
+  header.intro {
+    background: url(asset_path('backgrounds/cell-tower.png')) no-repeat bottom center scroll;
+    background-size: cover;
+  }
+
+  .navbar {
+    background: rgba(0,0,0,0.2);
+    border: none;
+  }
+
+  .navbar.top-nav-collapse {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    background: #000;
+  }
+
+  .homepage-content {
+    top: $mobile-video-height;
+  }
+
+  .fader {
+    display: none;
+  }
+}

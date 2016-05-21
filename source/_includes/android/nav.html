@@ -1,0 +1,32 @@
+<nav class="black" role="navigation">
+  <div class="nav-wrapper container">
+    <a id="logo-container" href="/" class="brand-logo">
+      {% image logo_circle_white.png class='navbar-brand-icon' alt='' %}
+      <span class='hide-on-small-only'>
+        Copperhead
+      </span>
+    </a>
+    <ul class="right hide-on-med-and-down">
+      {% include layout/nav_items.html %}
+    </ul>
+    <ul id="nav-mobile" class="side-nav">
+      {% include layout/nav_items.html %}
+    </ul>
+    <a href="#" data-activates="nav-mobile" class="button-collapse">
+      <i class="mdi-navigation-menu"></i>
+    </a>
+  </div>
+</nav>
+<nav class="grey darken-4 subnav" role="navigation">
+  <div class="nav-wrapper container">
+    <a href="/android" class="brand-logo">Android</a>
+    <ul id="nav-mobile" class="subnav-links left hide-on-med-and-down">
+      <li><a href="/android">Home</a></li>
+      <li><a href="/android/downloads">Downloads</a></li>
+      <li><a href="/android/docs/">Documentation</a></li>
+      <li><a href="https://github.com/copperheados/">Source</a></li>
+      <li><a href="/android/donate">Donate</a></li>
+      <li><a href="/android/buy">Buy</a></li>
+    </ul>
+  </div>
+</nav>

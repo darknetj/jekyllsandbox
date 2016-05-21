@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="{{ page.description }}">
+<meta name="theme-color" content="#000000">
+
+
+    <title>{{ page.title }} | Documentation | CopperheadOS</title>
+
+    <!-- RSS -->
+    <link href="https://copperhead.co/feed.xml" rel="alternate" type="application/rss+xml" title="Blog | Copperhead Security" />
+
+    <script src="/assets/android.js" defer></script>
+    <script data-main="/assets/all.js?7"
+            src="/assets/vendor/require.js" defer></script>
+  </head>
+  <body id="page-top" class='android-layout' data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <nav class="black" role="navigation">
+  <div class="nav-wrapper container">
+    <a id="logo-container" href="/" class="brand-logo">
+      <img src="/assets/logo_circle_white.png" class='navbar-brand-icon' alt=''>
+      <span class='hide-on-small-only'>
+        Copperhead
+      </span>
+    </a>
+    <ul class="right hide-on-med-and-down">
+      <li>
+  <a data-source='company' href="/" >
+    Services
+  </a>
+</li>
+<li>
+  <a data-source='android' href="/android/"  class='' >
+    Android
+  </a>
+  <ul class='hide-on-large-only hidden-sm hidden-md hidden-lg'>
+    <li>
+      <a data-source='android' href="/android/downloads">
+        Downloads
+      </a>
+    </li>
+    <li>
+      <a data-source='android' href="/android/docs/">
+        Documentation
+      </a>
+    </li>
+    <li>
+      <a data-source='android' href="https://github.com/copperheados/">
+        Source
+      </a>
+    </li>
+    <li>
+      <a data-source='android' href="/android/donate">
+        Donate
+      </a>
+    </li>
+    <li>
+      <a data-source='android' href="/android/buy">
+        Buy
+      </a>
+    </li>
+  </ul>
+</li>
+<li>
+  <a data-source='blog' href="/blog/" >
+    Blog
+  </a>
+</li>
+<li>
+  <a data-source='contact' href="/contact" class='nav-contact-us visible-xs-block'>
+    Contact
+  </a>
+</li>
+<li>
+  <a data-source='contact' href="/contact" class='nav-contact-us visible-md-block visible-lg-block hide-on-med-and-down hide-on-large-only btn btn-primary'>
+    Contact
+  </a>
+</li>
+
+    </ul>
+    <ul id="nav-mobile" class="side-nav">
+      <li>
+  <a data-source='company' href="/" >
+    Services
+  </a>
+</li>
+<li>
+  <a data-source='android' href="/android/"  class='' >
+    Android
+  </a>
+  <ul class='hide-on-large-only hidden-sm hidden-md hidden-lg'>
+    <li>
+      <a data-source='android' href="/android/downloads">
+        Downloads
+      </a>
+    </li>
+    <li>
+      <a data-source='android' href="/android/docs/">
+        Documentation
+      </a>
+    </li>
+    <li>
+      <a data-source='android' href="https://github.com/copperheados/">
+        Source
+      </a>
+    </li>
+    <li>
+      <a data-source='android' href="/android/donate">
+        Donate
+      </a>
+    </li>
+    <li>
+      <a data-source='android' href="/android/buy">
+        Buy
+      </a>
+    </li>
+  </ul>
+</li>
+<li>
+  <a data-source='blog' href="/blog/" >
+    Blog
+  </a>
+</li>
+<li>
+  <a data-source='contact' href="/contact" class='nav-contact-us visible-xs-block'>
+    Contact
+  </a>
+</li>
+<li>
+  <a data-source='contact' href="/contact" class='nav-contact-us visible-md-block visible-lg-block hide-on-med-and-down hide-on-large-only btn btn-primary'>
+    Contact
+  </a>
+</li>
+
+    </ul>
+    <a href="#" data-activates="nav-mobile" class="button-collapse">
+      <i class="mdi-navigation-menu"></i>
+    </a>
+  </div>
+</nav>
+<nav class="grey darken-4 subnav" role="navigation">
+  <div class="nav-wrapper container">
+    <a href="/android/" class="brand-logo">Android</a>
+    <ul id="nav-mobile" class="subnav-links left hide-on-med-and-down">
+      <li><a href="/android/">Home</a></li>
+      <li><a href="/android/downloads">Downloads</a></li>
+      <li><a href="/android/docs/">Documentation</a></li>
+      <li><a href="https://github.com/copperheados/">Source</a></li>
+      <li><a href="/android/donate">Donate</a></li>
+      <li><a href="/android/buy">Buy</a></li>
+    </ul>
+  </div>
+</nav>
+
+    <header class='subpage blue'>
+    <div class='container'>
+        <div class='row'>
+            <h1>Documentation</h1>
+        </div>
+    </div>
+</header>
+
+<div id='subpage-docs' class='container'>
+    <div class="row">
+        <!-- <div class="col s3"> -->
+        <!--     <ul class="collection docs&#45;sidebar"> -->
+        <!--         <a href='/android/docs/' class="collection&#45;item">Documentation</a> -->
+        <!--         <a href='/android/docs/technical_overview' class="collection&#45;item active">Tech Overview</a> -->
+        <!--         <a href='/android/docs/building' class="collection&#45;item">Building</a> -->
+        <!--     </ul> -->
+        <!--  -->
+        <!-- </div> -->
+        <!-- <div class="col s12"> -->
+            <main class='subpage docs-post'>
+                <p>
+                    <a href='/android/docs/'>
+                        &lt;- Back to documentation
+                    </a>
+                </p>
+                {{ content }}
+            </main>
+        <!-- </div> -->
+    </div>
+</div>
+
+    <footer class="page-footer white">
+  <div class="container">
+    <div class="row">
+      <div class="col l6 s12">
+        <h5 class="grey-text">Company Bio</h5>
+        <p class="grey-text">
+        Copperhead is an information security firm located in Toronto, Canada.
+        Specializing in protecting data and devices from unauthorized access. We
+        respond to incidents such as hacking, conduct malware forensics, and harden systems.
+      </div>
+      <div class="col l3 s12 footer-nav-items">
+        <h5 class="grey-text">Navigation</h5>
+        <ul>
+          <li>
+  <a data-source='company' href="/" >
+    Services
+  </a>
+</li>
+<li>
+  <a data-source='android' href="/android/"  class='' >
+    Android
+  </a>
+  <ul class='hide-on-large-only hidden-sm hidden-md hidden-lg'>
+    <li>
+      <a data-source='android' href="/android/downloads">
+        Downloads
+      </a>
+    </li>
+    <li>
+      <a data-source='android' href="/android/docs/">
+        Documentation
+      </a>
+    </li>
+    <li>
+      <a data-source='android' href="https://github.com/copperheados/">
+        Source
+      </a>
+    </li>
+    <li>
+      <a data-source='android' href="/android/donate">
+        Donate
+      </a>
+    </li>
+    <li>
+      <a data-source='android' href="/android/buy">
+        Buy
+      </a>
+    </li>
+  </ul>
+</li>
+<li>
+  <a data-source='blog' href="/blog/" >
+    Blog
+  </a>
+</li>
+<li>
+  <a data-source='contact' href="/contact" class='nav-contact-us visible-xs-block'>
+    Contact
+  </a>
+</li>
+<li>
+  <a data-source='contact' href="/contact" class='nav-contact-us visible-md-block visible-lg-block hide-on-med-and-down hide-on-large-only btn btn-primary'>
+    Contact
+  </a>
+</li>
+
+        </ul>
+      </div>
+      <div class="col l3 s12 footer-company-links">
+        <h5 class="grey-text">Connect</h5>
+        <ul>
+          <li><a href="https://twitter.com/CopperheadSec">Twitter</a></li>
+          <li><a href="https://github.com/copperheados">Source</a></li>
+          <li><a href="/contact">Email</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container grey-text">
+      Made by <a class="grey-text text-darken-3" href="/">Copperhead Security</a>
+    </div>
+  </div>
+</footer>
+
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="/assets/android.css?2">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,600,700" rel="stylesheet" type="text/css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+  </body>
+</html>

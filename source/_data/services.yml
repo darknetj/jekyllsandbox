@@ -1,0 +1,58 @@
+# 1. System hardening
+# 2. Forensics
+# 3. Software dev
+# 4. Incident response
+
+- name: Security Audits
+  summary: We conduct audits of source-code, technical infrastructure, and business practices to detect vulnerabilities and help implement safeguards.
+  url: security-audits
+  icon: connectdevelop
+  content:
+    - Source-code review
+    - Penetration testing web/mobile apps, networks, and systems
+    - Secure infrastructure set-up
+    - VPNs, SSH, and secure remote access
+    - Hardening mobile devices, laptops, networks, and servers
+    - Social engineering avoidance and counterintelligence strategies
+    - Training in managing online identities and keeping them safe and private
+    - Employee endpoints
+    - Whitebox and black-box testing
+
+- name: Forensics & Investigations
+  summary: Uncover information on assets via investigations, forensic analysis of computers, and incident response.
+  url: computer-forensics
+  icon: crosshairs
+  content:
+    - Certified digital forensics experts to help with legal cases
+    - Malware detection and analysis
+    - Investigating defamation and online harassment
+    - Search engine scrubbing
+    - Social media accounts removal
+    - Intellectual property theft
+    - Detecting economic espionage
+
+- name: Software Development
+  summary: We build Android and web apps, design user experiences, secure systems, and fearlessly dig into low-level coding.
+  url: software-development
+  icon: code
+  content:
+    - Mobile and web applications development
+    - Authentication systems
+    - Programming in Go, Ruby, Javascript, Android, C, C++, etc
+    - Linux systems management
+    - Secure programming practices
+    - Security audits of source-code
+    - Cryptocurrency applications
+
+- name: Incident Response 
+  summary: Seal off information leaks by getting your systems analyzed from an adversarial perspective.
+  url: incident-response
+  icon: ambulance
+  content:
+    - Responding to hacking or data theft
+    - Forensic analysis of endpoints and networks
+    - Secure preservation of evidence
+    - Uncovering which files were accessed
+    - Detecting malware via memory forensics
+    - Removal of malware and rootkits
+    - Smartphone (Android/iOS) malware detection

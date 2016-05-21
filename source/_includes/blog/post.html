@@ -1,0 +1,47 @@
+<!-- Page Header -->
+<header class="intro-header post-header" style="{% if page.header-pos %}background-position: {{ page.header-pos }};{% endif %}background-image: url('{% if page.header-img %}{{ page.header-img || asset_path }}{% else %}{{ site.header-img }}{% endif %}')">
+</header>
+
+<div class="blog-title">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <div class="blog-heading">
+          <h1 {% if page.title-size %}style='font-size: {{ page.title-size }}'{% endif %}>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</h1>
+          <span class="subheading">{{ page.subtitle }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<article id="blog-post">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <div class='blog-author'>
+          {% for member in site.data.team %}
+          {% if member.name == page.author %}
+              A blog post by
+              <img src='{{ member.headshot_hover || asset_path }}'>
+              <a href='{{ member.github }}'>{{ member.name }}</a> from
+              <span>
+                {{ page.date | timeago }}
+              </span>
+            {% endif %}
+          {% endfor %}
+        </div>
+        <div class='blog-post highlight'>
+            {{ content }}
+
+            <div class='blog-tilde'>
+                &#126;
+            </div>
+
+            {% include forms/email_capture.html %}
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+

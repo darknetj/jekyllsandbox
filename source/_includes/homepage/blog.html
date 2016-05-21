@@ -1,0 +1,30 @@
+<!-- Blog Section -->
+<section id="blog" class="content-section">
+  <div class="blog-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+          <h2>Blog</h2>
+          {% for post in site.posts %}
+            <div class="post-preview">
+              <a href="{{ post.url | replace:'.html','' }}" class='blog-link' data-source='homepage-box'>
+                <h2 class="post-title">
+                  {{ post.title }}
+                </h2>
+                <p class="post-meta">
+                  Posted by 
+                  <span>{{ post.author }}</span>
+                  on
+                  {{ post.date | date_to_string }}
+                </p>
+                <h3 class="post-subtitle">
+                  {{ post.subtitle }}
+                </h3>
+              </a>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,62 @@
+<!-- Main Content -->
+<div class="blog-title">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <div class="blog-heading blog-index">
+          <h1>Blog</h1>
+          <span class="subheading">
+            Documenting our progress hardening Android, building
+            software, and securing systems.
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="blog-index" class="container">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+      <a href="/feed.xml" class='rss-link'>
+        <i class="fa fa-rss-square"></i>
+        RSS Feed
+      </a>
+
+      {% if site.posts.size == 0 %}
+        <div class="post-preview">
+        <p>Blog posts coming soon!</p>
+        </div>
+      {% else %}
+        {% for post in site.posts %}
+        <div class="post-preview">
+          <a href="{{ post.url | replace:'.html','' }}">
+            <h2 class="post-title">
+              {{ post.title }}
+            </h2>
+            <p class="post-meta">
+              Posted by 
+              <span>{{ post.author }}</span>
+              on
+              {{ post.date | date_to_string }}
+            </p>
+            <h3 class="post-subtitle">
+              {{ post.subtitle }}
+            </h3>
+          </a>
+        </div>
+        {% endfor %}
+
+        <!-- Pager -->
+        <ul class="pager">
+          <li class="next">
+            <a href="#">Older Posts &rarr;</a>
+          </li>
+        </ul>
+
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+<hr>

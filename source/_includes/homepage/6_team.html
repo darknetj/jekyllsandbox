@@ -1,0 +1,59 @@
+<!-- Team Section -->
+<section id="team" class="content-section container">
+  <div class="team-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 col-md-offset-1 text-center">
+          <h2>Team</h2>
+        </div>
+      </div>
+
+        <div class="row">
+          <div class="col-md-10 col-md-offset-1 text-center">
+            <div class='row'>
+
+              {% for member in site.data.team %}
+                <div class='team-column'>
+                  <div class='team-headshot'>
+                    <img class='team-headshot-picture'
+                         src="{{ member.headshot_hover || asset_path }}"
+                         alt="{{ member.name }}">
+                  </div>
+                  <h4 class="team-heading">{{ member.name }}</h4>
+                  <ul class="team-social-item list-inline">
+                    {% if member.github %}
+                    <li>
+                      <a href="{{ member.github }}" class='team-social-link' data-source='homepage-box'><i class="fa fa-github"></i>
+                        Github
+                      </a>
+                    </li>
+                    {% endif %}
+                    {% if member.linkedin %}
+                    <li>
+                      <a href="{{ member.linkedin }}" class='team-social-link' data-source='homepage-box'><i class="fa fa-linkedin"></i>
+                        Linkedin
+                      </a>
+                    </li>
+                    {% endif %}
+                    {% if member.twitter %}
+                    <li>
+                      <a href="{{ member.twitter }}" class='team-social-link' data-source='homepage-box'><i class="fa fa-twitter"></i>
+                        Twitter
+                      </a>
+                    </li>
+                    {% endif %}
+                  </ul>
+                  <!-- <ul class="team&#45;skills"> -->
+                  <!--   {% for skill in member.skills %} -->
+                  <!--     <li>{{ skill }}</li> -->
+                  <!--   {% endfor %} -->
+                  <!-- </ul> -->
+                </div>
+              {% endfor %}
+
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+</section>

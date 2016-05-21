@@ -1,0 +1,35 @@
+---
+layout: compress
+---
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% include layout/meta.html %}
+
+    <title>
+        {% if page.title %}
+            {{ page.title }}
+        {% else %}
+            Copperhead - Hardened Android OS
+        {% endif %}
+    </title>
+
+    <!-- RSS -->
+    <link href="https://copperhead.co/feed.xml" rel="alternate" type="application/rss+xml" title="Blog | Copperhead Security" />
+
+    {% javascript android defer %}
+    <script data-main="{{ 'all.js?7' | asset_path }}"
+            src="{{ 'vendor/require.js' | asset_path }}" defer></script>
+  </head>
+  <body id="page-top" class='android-layout' data-spy="scroll" data-target=".navbar-fixed-top">
+
+    {% include android/nav.html %}
+    {{ content }}
+    {% include android/footer.html %}
+
+    <!-- Stylesheets -->
+    <link href="{{ 'android.css?2' | asset_path }}" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,600,700" rel="stylesheet" type="text/css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+  </body>
+</html>

@@ -1,0 +1,178 @@
+$cta-color: #0074D9;
+$cta-black: #001f3f;
+$cta-grey: #DDD;
+$cta-dark-grey: #AAA;
+
+.call-to-action {
+  margin:auto;
+  border: 1px solid lighten($cta-grey, 2%);
+  line-height: 1.5625em !important;
+  margin-top: 80px;
+  max-width: 700px;
+  width: 100%;
+  h3, p, form, input {
+    font-family: Roboto, sans-serif !important;
+  }
+  ul {
+    padding: 0;
+    li {
+      list-style: none;
+      width: 50%;
+      float:left;
+      h3 {
+        margin: 0 0 24px 0 !important;
+        line-height: 0 !important;
+        color: $cta-black;
+        font-size: 18px !important;
+      }
+      a {
+        border: none !important;
+        border-top: 3px solid $cta-dark-grey !important;
+        display: block;
+        padding: 45px 40px 40px;
+        height: 145px;
+        color: #AAAAAA;
+        font-size: 15px;
+        min-height: 120px;
+        &:hover {
+          color: #AAAAAA;
+        }
+      }
+      .sub {
+        line-height: 1.4em;
+        color: #001f3f;
+        opacity: 0.5;
+      }
+    }
+    li:first-child {
+      a {
+        border-right: 1px solid $cta-grey !important;
+      }
+    }
+    li.active {
+      a {
+        border-top: 3px solid $cta-black !important;
+        border-bottom: none !important;
+      }
+    }
+    li:not(.active) {
+      box-shadow: inset 2px -3px 3px rgba(215, 215, 215, 0.35);
+      h3 {
+        color: #7d7d7d;
+      }
+      a {
+        border-bottom: 1px solid $cta-grey !important;
+      }
+      a:hover {
+        background: #F1F1F1;
+        .sub {
+          color: #7d7d7d;
+        }
+      }
+      a:active {
+        background: #EEE;
+      };
+    }
+
+  }
+
+  main {
+    padding: 40px 50px 60px;
+    min-height: 380px;
+    clear: both;
+    h3 {
+      color: $cta-color;
+      line-height: 1.5625em !important;
+      margin-top: 0 !important;
+      margin-bottom: 16px !important;
+      font-size: 28px;
+    }
+    p {
+      color: $cta-black;
+      font-weight: 400;
+      font-size: 16px;
+      font-family: Roboto, sans-serif;
+      line-height: 1.5625em !important;
+      margin-bottom: 16px;
+    }
+    p.email-capture-note {
+      font-size: 14px;
+      color: #001f3f;
+      opacity: 0.5;
+    }
+    form {
+      margin: 16px 0 32px;
+      input[type='email'] {
+        max-width: 360px;
+        width: 100%;
+        padding: 6px 12px;
+        font-size: 16px;
+        border: 1px solid #DDDDDD;
+        &:hover {
+          border: 1px solid darken(#DDDDDD, 10%);
+        }
+        &:focus {
+          border: 1px solid darken(#DDDDDD, 30%);
+        }
+      }
+      input[type='submit'] {
+        background: $cta-color;
+        border: darken($cta-color, 20%);
+        color: white;
+        font-size: 16px;
+        padding: 6px 12px 6px;
+        &:hover {
+          background: darken($cta-color, 5%);
+        }
+        &:active {
+          background: lighten($cta-color, 10%);
+        }
+      }
+    }
+  }
+
+  .android-email-capture .email-capture {
+    width: 70%;
+    border: 1px solid #DDDDDD;
+    padding: 30px 40px 30px;
+    margin-bottom: 40px;
+    form input {
+      line-height: 2em;
+    }
+    input[type='email'] {
+      height: 32px;
+    }
+    input[type='submit'] {
+    }
+  }
+
+  .cta-alert {
+     border-radius: 3px;
+     color: rgb(255, 255, 255);
+     font-size: 16px;
+     font-weight: 500;
+     line-height: 26px;
+     margin-bottom: 16px;
+     padding: 16px;
+     text-align: center;
+     display: none;
+  }
+
+  .cta-alert--positive {
+    background :#2ECC40;
+    display: block;
+  }
+
+  .cta-alert--negative {
+    background: #FF4136;
+    display: block;
+  }
+}
+
+@media(max-width:766px) {
+  .call-to-action {
+    main {
+        padding: 40px 25px 60px;
+    }
+  }
+}

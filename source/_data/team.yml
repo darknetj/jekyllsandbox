@@ -1,0 +1,20 @@
+- name: Daniel Micay
+  bio: Daniel is a very talented software engineer with a strong mind for security. He fearlessly codes low-level languages, knows Linux inside out, and has exposure to a broad range of higher-level languages. He was a top contributor for the Rust language, maintains a key role in the Arch Linux project, and is an expert at grsecurity/PaX.
+  github: https://github.com/thestinger
+  headshot: team/daniel_micay_bw.jpg
+  headshot_hover: team/daniel_micay.jpg
+  skills: 
+    - Software Developer 
+    - Security Researcher
+    - Low-level / Linux
+
+
+- name: James Donaldson
+  bio: James's 10 years of experience in information security, strategy consulting and managing non-profit privacy initiatives have granted him a much-needed double-sided perspective on implementing information, personal, and operational security.
+  linkedin: https://ca.linkedin.com/pub/james-donaldson/98/ba6/7b8
+  headshot: team/james_donaldson_bw.jpg
+  headshot_hover: team/james_donaldson.jpg
+  skills: 
+    - Digital Forensics 
+    - Penetration Tester
+    - Private Investigator

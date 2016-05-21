@@ -1,0 +1,352 @@
+$blog-text: #252525;
+$blog-header: #111;
+$blog-font-size: 18px;
+$blog-line-height: 34px;
+$blog-link: darken(#1565c0, 10%);
+$blog-muted: #8a8a8a;
+
+.navbar.navbar-main-collapse {
+  background: #000;
+}
+
+header.intro-header {
+  background-position: center center;
+  background-image: url(asset_path('backgrounds/post9.jpg'));
+  height: 560px;
+  .site-heading  {
+    padding: 50% 0;
+    h1 {
+      text-transform: none;
+    }
+    .subheading {
+      line-height: 33px;
+    }
+  }
+}
+
+.post-count {
+  color: rgba(0,0,0,0.5);
+  font-size: 22px;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+.post-preview {
+  font-family: Roboto, sans-serif;
+  color: #333;
+  margin: 40px 0;
+  display: block;
+  h2, h3 {
+    text-transform: none;
+    font-family: Roboto, sans-serif;
+  }
+  h2 {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 23px;
+    margin-bottom: 0;
+    color: #111;
+  }
+  .post-title {
+    font-weight: bold;
+  }
+  .post-subtitle {
+    color: #333;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    margin-bottom: 0 0 20px !important;
+  }
+  .post-meta {
+    font-size: 14px;
+    font-style: normal;
+    color: #999;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-family: Montserrat, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    > span {
+      color: rgba(0,0,0,0.6);
+    }
+  }
+  > a {
+    &:hover,
+    &:focus {
+      .post-title {
+        color: rgba(0,0,0,0.8);
+        text-decoration: underline;
+      }
+      .post-subtitle {
+        color: rgba(0,0,0,0.7);
+      }
+    }
+  }
+}
+
+pre {
+  background: #111;
+  /* color: #ccc; */
+  border-radius: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .post-preview {
+    > a > .post-title {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    h3 {
+      font-size: 18px;
+    }
+  }
+  pre {
+    margin: 0 -50px 35px;
+  }
+}
+
+@media only screen and (min-width: 567px) {
+  .post-preview {
+    > a > .post-title {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    h3 {
+      font-size: 18px;
+    }
+  }
+  pre {
+    margin: 0 -50px 35px;
+  }
+}
+
+@media only screen and (max-width: 567px) {
+  .post-preview {
+    > a > .post-title {
+      font-size: 24px;
+    }
+    h3 {
+      font-size: 15px;
+      line-height: 21px;
+    }
+  }
+}
+
+footer {
+  background: none;
+  color: #333;
+  margin-top: 100px;
+  padding: 30px 0 50px;
+  .logo {
+    font-size: 1.3em;
+    text-transform: uppercase;
+    color: #111;
+    .footer-logo {
+      background: url(asset_path('logo_icon.png'));
+      background-size: cover;
+      height: 60px;
+      width: 60px;
+      margin: 0 auto 20px;
+    }
+  }
+  p, h3 {
+    display: none;
+  }
+}
+
+.social-section {
+  a {
+    color: #7d7d7d;
+  }
+}
+
+.blog-post {
+  font-family: Roboto, sans-serif;
+  max-width: 700px;
+  font-size: 20px;
+  color: $blog-text;
+  a {
+    color: $blog-link;
+    border-bottom-color: rgb(225, 225, 225);
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    &:hover {
+      color: darken($blog-link, 5%);
+    }
+    &:active {
+      color: lighten($blog-link, 5%);
+    }
+  }
+  p {
+    font-weight: 400;
+    line-height: $blog-line-height;
+    font-size: $blog-font-size;
+    margin-bottom: 30px;
+    word-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+    color: $blog-text;
+  }
+  ul {
+    margin-bottom: 30px;
+  }
+  h2, h3, h4 {
+  }
+  h2 {
+    color: $blog-header;
+    margin-bottom: $blog-line-height;
+    margin-top: 50px;
+    text-transform: none;
+    font-size: 28px;
+    font-weight: 500;
+  }
+  h3 {
+    text-transform: none;
+    color: #2B2B2B;
+    margin-bottom: $blog-line-height;
+    font-size: 21px;
+    margin-top: 35px;
+    font-weight: 500;
+  }
+  h4 {
+    color: $blog-header;
+    margin-bottom: 15px;
+    text-transform: none;
+    font-size: 21px;
+    font-weight: 500;
+  }
+  hr {
+    width: 20%;
+    margin: 20px auto;
+    border-color: #ddd;
+  }
+  img {
+    max-width: 600px;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+  // code elements next to an img acts as a caption
+  img + code {
+    font-size: 0.7em;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    background: #eee;
+    color: #7d7d7d;
+    padding: 5px;
+    line-height: 1.8;
+    max-width: 600px;
+  }
+}
+
+@media only screen and (max-width: 567px) {
+  .blog-post {
+    line-height: 26px;
+    font-size: 18px;
+    h2 {
+      font-size: 24px;
+    }
+    h3 {
+      font-size: 20px;
+    }
+    h4 {
+      font-size: 18px;
+    }
+    p {
+      font-size: 18px;
+    }
+    img {
+      width: 100%;
+    }
+    img + code {
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+  pre {
+    overflow-x: scroll;
+    overflow-y: auto;
+    word-wrap: normal;
+    code {
+      white-space: inherit;
+    }
+  }
+  footer {
+    padding-top: 100px;
+  }
+}
+
+
+.navbar-custom {
+  .btn-primary, .btn-primary:hover {
+    background-color: transparent !important;
+    border-color: transparent !important;
+  }
+  .btn-primary:hover {
+    background-color: rgba(255,255,255,0.3) !important;
+  }
+}
+
+.blog-author {
+  padding: 20px 0 15px;
+  border-top: 1px solid rgba(89,89,89,0.1);
+  color: #B1B1B1;
+  margin: -10px auto 35px;
+  text-align: center;
+  max-width: 460px;
+  font-size: 14px;
+  img {
+    height: 30px;
+    border-radius: 30px;
+    opacity: .9;
+    position: relative;
+    top: -2px;
+  }
+  a {
+    color: rgba(122, 122, 122, 1);
+  }
+  a:hover {
+    color: rgba(0,0,0,0.7);
+  }
+}
+
+.rss-link {
+  font-size: 1em;
+  display:block;
+  margin:auto;
+}
+
+.blog-heading {
+  background: white;
+  color: #333;
+  padding: 55px 0;
+  margin: -40px -25px 00px;
+  text-align: center;
+  border-radius: 7px;
+  h1 {
+    text-transform: none;
+    color: #3A3A3A;
+    margin: 0 35px;
+    font-size: 60px;
+    font-weight: 600;
+  }
+  h1, .subheading {
+  }
+  .subheading {
+    display: block;
+    letter-spacing: -0.02em;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 29px;
+    line-height: 1.2;
+    color: #969696;
+    margin: 40px 60px 2px;
+    font-family: Roboto, sans-serif;
+  }
+}
+
+.blog-tilde {
+  font-size:1.6em;
+  width:100%;
+  text-align:center;
+  margin-top:60px;
+}

@@ -1,9 +1,5 @@
 ---
-layout: default
+layout: blog
 ---
-<h2>{{ page.title }}</h2>
-<p class="meta">Relative date: {{ page.date | timeago }}</p>
 
-<div class="post">
-{{ content }}
-</div>
+{% include blog/post.html %}

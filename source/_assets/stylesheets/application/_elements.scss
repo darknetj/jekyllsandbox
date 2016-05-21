@@ -1,0 +1,39 @@
+.btn-primary {
+  background-color: $primary;
+  border-color: darken($primary, 0.5);
+  &:hover, &:active  {
+    background-color: darken($primary, 5%);
+    border-color: darken(darken($primary, 0.5),10%);
+    color: white;
+  }
+  &:active  {
+    color: black;
+  }
+}
+
+.btn-default {
+  &:hover {
+    color: #FFF;
+  }
+}
+
+.btn-outline {
+  border-color: rgba(255,255,255,0.9);
+  color: white;
+}
+
+.dim {
+  color: fade-out($light, 0.7);
+}
+
+blockquote {
+  color: $gray;
+  font-style: italic;
+}
+
+hr.small {
+  max-width: 100px;
+  margin: 15px auto;
+  border-width: 4px;
+  border-color: white;
+}

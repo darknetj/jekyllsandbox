@@ -1,0 +1,52 @@
+<li>
+  <a data-source='company' href="/" {% if page.nav == 'index' %}class='' {% endif %}>
+    Services
+  </a>
+</li>
+<li>
+  <a data-source='android' href="/android" {% if page.nav == 'android' %} class='' {% endif %}>
+    Android
+  </a>
+  <ul class='hide-on-large-only hidden-sm hidden-md hidden-lg'>
+    <li>
+      <a data-source='android' href="/android/downloads">
+        Downloads
+      </a>
+    </li>
+    <li>
+      <a data-source='android' href="/android/docs/">
+        Documentation
+      </a>
+    </li>
+    <li>
+      <a data-source='android' href="https://github.com/copperheados/">
+        Source
+      </a>
+    </li>
+    <li>
+      <a data-source='android' href="/android/donate">
+        Donate
+      </a>
+    </li>
+    <li>
+      <a data-source='android' href="/android/buy">
+        Buy
+      </a>
+    </li>
+  </ul>
+</li>
+<li>
+  <a data-source='blog' href="/blog/" {% if page.layout == 'blog' %} class='' {% endif %}>
+    Blog
+  </a>
+</li>
+<li>
+  <a data-source='contact' href="/contact" class='nav-contact-us visible-xs-block'>
+    Contact
+  </a>
+</li>
+<li>
+  <a data-source='contact' href="/contact" class='nav-contact-us visible-md-block visible-lg-block hide-on-med-and-down hide-on-large-only btn btn-primary'>
+    Contact
+  </a>
+</li>

@@ -1,13 +1,15 @@
 ---
-layout: default
-title: Your New Jekyll Site
+layout: homepage
+title: Copperhead Security - Toronto Information Security Firm
+nav: index
 ---
 
-<div id="home">
-  <h1>Blog Posts</h1>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
+{% include homepage/header.html %}
+
+<div id='homepage' class='homepage-content'>
+  <div class='fader'></div>
+  {% include homepage/services.html %}
+  {% include homepage/products.html %}
+  {% include homepage/blog.html %}
+  {% include layout/footer.html %}
 </div>

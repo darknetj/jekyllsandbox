@@ -1,0 +1,27 @@
+- icon: action-android
+  question: Which devices are supported?
+  answer: CopperheadOS currently runs on the Nexus 5, Nexus 9 and Nexus 5X. Support for the Nexus 6 and Nexus 6P is planned. It will not support devices outside of the Nexus and Pixel lines.
+
+- icon: action-alarm
+  question: How long will devices be supported?
+  answer: Devices will be supported until Google drops support from the Android Open Source Project. Google guarantees major version updates for at least two years after launch. Security updates are guaranteed for three years after launch along with 1.5 years after the last device is sold.
+
+- icon: social-whatshot
+  question: Is it stable?
+  answer: There are likely rarely used components of the operating system that are broken due to latent bugs in Android uncovered by CopperheadOS exploit mitigations. The core functionality of the operating system is very stable.
+
+#- question: Can I still play Angry Birds?
+  #icon: action-store
+  #answer: We are still debating whether or not we will support the installation of arbitrary apps from F-Droid/Play Store, or offer a selection of pre-installed apps which will offer businesses a security communications device. The idea is that people can use Copperhead for serious business and another device for personal use. We may offer both versions.
+
+#- question: When will it be released?
+  #icon: notification-system-update
+  #answer: We plan to release a beta version in the next few months targeting Nexus 5. Then do rolling releases via OTA updates as we complete features. Once our OS reaches a respectable level we will roll out an official release and distribute pre-hardened phones and support services.
+
+#- question: Who is behind the project?
+  #icon: social-group
+  #answer: The project was started by a group of Toronto-based security researchers and software developers. Daniel Micay is our lead low-level hacker hardening the kernel and base system and James Donaldson is doubling as our frontman and forensics expert.
+
+#- question: How will you make money?
+  #icon: editor-attach-money
+  #answer: We plan to sell pre-hardened Android phones (at this moment the target phone is Nexus 5). We also plan to work directly with companies looking to buy in bulk and roll out phones with their teams.
