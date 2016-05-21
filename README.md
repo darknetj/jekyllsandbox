@@ -17,7 +17,7 @@ Development Setup
 
 3) Install the dependencies for static compilation:
 
-    bundle install
+    make install
 
 
 Usage
