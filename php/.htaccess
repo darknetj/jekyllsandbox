@@ -1,5 +1,0 @@
-Options +MultiViews -Indexes
-
-RewriteEngine On
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*)/$ /$1 [L,R=301]

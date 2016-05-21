@@ -8,7 +8,9 @@ url: "https://copperhead.co"
 markdown: kramdown
 highlighter: pygments
 timezone: America/New_York
-permalink: /blog/:year/:month/:day/:title
+
+include:
+  - .htaccess
 
 gems:
   - jekyll-timeago
