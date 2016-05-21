@@ -1,0 +1,110 @@
+---
+layout: android
+title: Downloads | CopperheadOS
+description: Download factory images and over-the-air updates for CopperheadOS
+nav: android
+---
+
+<header class='subpage blue'>
+    <div class='container'>
+        <div class='row'>
+            <h1>Downloads</h1>
+        </div>
+    </div>
+</header>
+
+<div id='subpage-builds' class='container'>
+    <div class='row'>
+        <main class='subpage'>
+            <h3>CopperheadOS releases</h3>
+
+            <p class='device-filter'>
+                <b>Filter by device:</b>
+                <a href="/android/downloads">All</a> -
+                <a href="/android/downloads?device=hammerhead" data-device='hammerhead'>
+                    Nexus 5
+                </a> -
+                <a href="/android/downloads?device=shamu" data-device='shamu'>
+                    Nexus 6
+                </a> -
+                <a href="/android/downloads?device=flounder" data-device='flounder'>
+                    Nexus 9 (WiFi)
+                </a> -
+                <a href="/android/downloads?device=flounder_lte" data-device='flounder_lte'>
+                    Nexus 9 (LTE)
+                </a> -
+                <a href="/android/downloads?device=bullhead" data-device='bullhead'>
+                    Nexus 5X
+                </a> -
+                <a href="/android/downloads?device=angler" data-device='angler'>
+                    Nexus 6P
+                </a>
+            </p>
+            <p>
+                See <a href='/android/docs/'>the documentation</a> for
+                installation and building instructions along with technical
+                information on the operating system.
+            </p>
+
+            <p>
+                Note that Firefox and Firefox-based browsers will mangle the tarball downloads by
+                adding an extra layer of gzip compression. This bug was <a
+                href='https://bugzilla.mozilla.org/show_bug.cgi?id=610679'>reported to Mozilla in
+                2010</a> but has yet to be fixed. Either use a sane browser/tool to perform the
+                download or replace the tar.gz extension with tar.gz.gz and remove the extra layer
+                of compression with gunzip. We have a workaround in place on our end but OpenShift
+                has a <a href='https://bugzilla.redhat.com/show_bug.cgi?id=1236160'>separate bug
+                preventing it from working</a>. Software sucks.
+            </p>
+
+            <table class='builds-table content-table hide-on-small-and-down' id='builds'>
+                <tr>
+                    <th>
+                        Date
+                    </th>
+                    <th>
+                        Device
+                    </th>
+                    <th>
+                        Version
+                    </th>
+                    <th>
+                        Factory images
+                    </th>
+                    <th>
+                        Update zip
+                    </th>
+                </tr>
+            </table>
+
+            <table class='builds-table builds-table-mobile responsive-table hide-on-med-and-up' id='builds-mobile'>
+                <tr>
+                    <th>
+                        Date
+                    </th>
+                    <th>
+                        Device
+                    </th>
+                    <th>
+                        Version
+                    </th>
+                    <th>
+                        Factory images
+                    </th>
+                    <th>
+                        Update zip
+                    </th>
+                </tr>
+            </table>
+
+        </main>
+    </div>
+</div>
+
+<div class='android-email-capture'>
+    <div class='container'>
+        <div class='row'>
+            {% include forms/email_capture.html %}
+        </div>
+    </div>
+</div>

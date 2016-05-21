@@ -1,0 +1,125 @@
+---
+layout: android
+title: CopperheadOS - Secure Android
+description: A hardened open-source operating system based on Android with PaX, OpenBSD malloc and many other security features.
+nav: android
+priority: 1.0
+---
+
+<div class="section light-black no-pad-bot headline" id="index-banner">
+    <div class="container">
+        <br class='hide-on-med-and-down'>
+        <div class='mobile-phone-image'>
+            {% image 'secure_android_phone.png' class='nexus5_small' alt='Nexus 5' %}
+        </div>
+        <h1 class="header center">CopperheadOS</h1>
+        <div class="row center">
+            <h5 class="header col s12 light">
+                A hardened open-source operating system based on Android
+            </h5>
+        </div>
+        <div class="row center">
+            <a href="/android/downloads"
+               class="btn-large waves-effect waves-light blue darken-1">
+                <i class="mdi-file-cloud-download"></i>
+                Downloads
+            </a>
+            <a href="/android/docs/"
+               class="btn-large waves-effect waves-light green darken-1">
+                <i class="mdi-maps-local-library"></i>
+                Documentation
+            </a>
+            <a href="https://github.com/copperheados"
+               class="btn-large github waves-effect waves-light grey">
+                {% image 'GitHub-Mark-32px.png' class='github-icon' alt='' %}
+                Source
+            </a>
+        </div>
+        <div class="row center">
+            <a href='/android/donate' class='donation-cta'>Support development with a <b>donation</b> today!</a>
+        </div>
+        <div class="row center headline-phone">
+            <div class="col s6 m6 l3">
+                <ul class='left'>
+                    <li>
+                        Protection from zero-days
+                        <div>Prevents many vulnerabilities and makes exploits harder</div>
+                    </li>
+                    <li>
+                        Hardened C standard library and compiler toolchain
+                        <div>Catches memory corruption and integer overflows</div>
+                    </li>
+                    <li>
+                        Hardened kernel with an unofficial port of PaX
+                        <div>Kernel self-protection and high quality ASLR</div>
+                    </li>
+                    <li>
+                        Stronger sandboxing and isolation for apps &amp; services
+                        <div>Stricter SELinux policies, seccomp-bpf and more</div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col l6 hide-on-small-only">
+                <div class='headline-phone-image'>
+                    {% image 'secure_android_phone.png' class='nexus5' alt='Nexus 5' %} {% image 'secure_android_phone_solo.png' class='nexus5_solo' alt='Nexus 5' %}
+                </div>
+            </div>
+            <div class="col s6 m6 l3">
+                <ul class='right'>
+                    <li>
+                        Backported security features and quicker patching
+                        <div>Benefiting from upstream changes long before stock</div>
+                    </li>
+                    <li>
+                        Firewall &amp; network hardening
+                        <div>Along with improvements like MAC randomization</div>
+                    </li>
+                    <li>
+                        Open-source and free of proprietary services
+                        <div>Google integration is entirely optional</div>
+                    </li>
+                    <li>
+                        Security-centric user experience changes
+                        <div>Better defaults, separate lockscreen/encryption passwords</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row center">
+            See the <a href='/android/docs/technical_overview'>technical overview</a> for an in-depth look.
+        </div>
+    </div>
+    <br>
+</div>
+<div class="container">
+    <div class="section android-content">
+
+        <!--   Icon Section   -->
+        <div class="row">
+
+            {% for item in site.data.faq %}
+            <div class="col s12 m6 l6">
+                <div class="icon-block">
+                    <h2 class="center light-blue-text">
+                        <i class="mdi-{{ item.icon }}"></i>
+                    </h2>
+                    <h5 class="center">{{ item.question }}</h5>
+
+                    <p class="light">
+                        {{ item.answer }}
+                    </p>
+                </div>
+            </div>
+            {% endfor %}
+
+        </div>
+    </div>
+</div>
+
+<div class='android-email-capture'>
+    <div class='container'>
+        <div class='row'>
+            {% include forms/email_capture.html %}
+        </div>
+    </div>
+</div>

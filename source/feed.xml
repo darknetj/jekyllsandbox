@@ -1,0 +1,36 @@
+---
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+	<channel>
+		<title>{{ site.title | xml_escape }}</title>
+		<image>
+			<url>https://copperhead.co/logo.png</url>
+			<title>Copperhead Security</title>
+			<link>https://copperhead.co/blog</link>
+			<width>140</width>
+			<height>139</height>
+			<description>Secure Your Assets</description>
+		</image>
+		<description>{% if site.description %}{{ site.description | xml_escape }}{% endif %}</description>
+		<link>{{ site.url }}</link>
+		<atom:link href="{{ site.url }}/feed.xml" rel="self" type="application/rss+xml" />
+		{% for post in site.posts %}
+			<item>
+				<title>{{ post.title | xml_escape }}</title>
+				{% if post.author %}
+					<dc:creator>{{ post.author | xml_escape }}</dc:creator>
+					<author>
+						<name>{{ post.author }}</name>
+					</author>
+				{% endif %}
+				<id>{{ site.url }}{{ post.url | replace:'.html','' }}</id>
+				<description>{{ post.subtitle | xml_escape }}</description>
+				<pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
+				<link rel="alternate" type="text/html" href="{{ site.url }}{{ post.url | replace:'.html','' }}" />
+				<guid isPermaLink="true">{{ site.url }}{{ post.url | replace:'.html','' }}</guid>
+				<content type="html">{{ post.content | xml_escape }}</content>
+			</item>
+		{% endfor %}
+	</channel>
+</rss>

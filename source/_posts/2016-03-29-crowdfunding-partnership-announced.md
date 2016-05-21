@@ -1,11 +1,11 @@
 ---
 layout:     post
-title:      Announcing CopperheadOS Crowdfunding
-subtitle:   Copperhead Will Be Crowdfunding with Privacy Partners Guardian Project and F-Droid
+title:      "Announcing CopperheadOS Crowdfunding"
+subtitle:   "Copperhead Will Be Crowdfunding with Privacy Partners Guardian Project and F-Droid"
 date:       2016-03-29 10:00:00
-author:     James Donaldson
-header-img: backgrounds/alpha.png
-header-pos: top center
+author:     "James Donaldson"
+header-img: "backgrounds/alpha.png"
+header-pos: "top center"
 published:  true
 priority:   1.0
 ---

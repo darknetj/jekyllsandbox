@@ -1,0 +1,94 @@
+---
+layout: android
+title: Donate | CopperheadOS
+description: Support the development of CopperheadOS with donations
+nav: android
+---
+
+<header class='subpage blue'>
+    <div class='container'>
+        <div class='row'>
+            <h1>Donate</h1>
+        </div>
+    </div>
+</header>
+
+<div id='subpage-docs' class='container'>
+    <main class='subpage'>
+    <div class='row'>
+        <div class="col s6">
+            <form action="" method="POST" id='donate'>
+                <div class='form-alert'></div>
+                <ul class="collection with-header">
+                    <li class="collection-header">
+                        <h5>Select Amount</h5>
+                    </li>
+                    {% for amount in site.data.donations %}
+                        <li class="collection-item">
+                            <input name="amount" type="radio" id="amount_{{amount}}" value="{{amount}}"/>
+                            <label for="amount_{{amount}}">${{amount}}</label>
+                        </li>
+                    {% endfor %}
+                    <li class="collection-item">
+                        <input name="amount" type="radio" id="amount_other" value="0" />
+                        <label for="amount_other">Other</label>
+                        <div class='amount-other-input'>
+                            <span>$</span>
+                            <input type='number' min="1" max="5000" id='amount_other_input' value="0"/>
+                        </div>
+                    </li>
+                    <li class="collection-item">
+                        <a href="#" id="stripe-submit"
+                           class="btn-large waves-effect waves-light green darken-1">
+                            Pay with card
+                        </a>
+                    </li>
+                </ul>
+            </form>
+        </div>
+        <div class="col s6 docs-post">
+            <h5><b>Support CopperheadOS development!</b></h5>
+
+            <p>At this stage
+            we're entirely self-funding the project and looking to build
+            out the project with community support.
+            The Copperhead team works hard to keep our Android OS
+            entirely open and accessible to everyone.
+            </p>
+
+            <p>All donations
+            will go directly to supporting CopperheadOS including:
+            <ul>
+                <li>Hardware (CPU/SSD/etc) for building Android from source</li>
+                <li>File servers for distributing OTA updates</li>
+                <li>Site hosting</li>
+                <li>Mobile devices for QA and testing</li>
+            </ul>
+
+            With community support we can speed up our
+            release cycles with faster builds and focus more of our time
+            on developing CopperheadOS.</p>
+
+            <p><b>Payment methods:</b> Credit cards (via Stripe), Bitcoin,
+            and Paypal.</p>
+
+            <p><b>Bitcoin address:</b> 1DbRzEwZar9T7KF6tE8zUxKmuj9VJhD5U6</p>
+
+            <p><b>Paypal:</b> please send payments to team@copperhead.co</p>
+
+            <p>
+            We're also working on some ways to publicly recognize the
+            supporters of CopperheadOS, such as highlighting
+            contributors on our website and sending out perks to those
+            who make a significant contribution.</p>
+
+            <p>We appreciate the support!<br>- Copperhead Team</p>
+</div>
+
+
+    </div>
+    </main>
+</div>
+
+
+<script src="https://checkout.stripe.com/checkout.js"></script>
